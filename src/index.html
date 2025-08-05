@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./output.css">
+    <title>todo</title>
+</head>
+<body class="flex flex-col justify-evenly items-center m-0 h-screen bg-gradient-to-r from-[var(--gradient-start)] from-0% to-[var(--gradient-stop)] to-100%">
+    <section class="flex flex-col justify-around rounded-4xl bg-[var(--white)] p-12 h-1/2 w-3/5  shadow-[0_1rem_3rem_1rem_rgba(0,23,71,1)] max-w-lg">
+        <h2 class="text-3xl font-bold uppercase h-12 text-center text-[var(--dark)]">To-do List</h2>
+        <div class="flex relative">
+            <input id="todoInput" class="w-full border border-solid border-[#d2d2d2bf] rounded-lg p-5 text-lg placeholder-[var(--grey)]" type="text" placeholder="Add a new Item" />
+            <button id="addButton" class="text-[var(--white)] text-lg py-3 px-6 rounded-lg bg-[var(--blue)] border-none absolute right-2 bottom-2">Add</button>
+        </div>
+
+        <ul class="list-disc overflow-y-scroll">
+            <li class="m-2 [&>p]:text-[#8f98a8] flex flex-col" id="todoList"></li>
+        </ul>
+
+        <div class="">
+            <hr class="rounded-xs border-[var(--grey-light)] my-4 "/>
+
+            <div class="h-8 flex justify-between text-[var(--grey)] [&>p]:self-center">
+                <p><span id="todoCount">0</span> items total</p>
+                <div class="flex flex-col gap-2">
+                    <button class=" px-2 rounded border bg-transparent text-lg" id="deleteButton"> Delete all</button>
+                    <button class=" px-2 rounded border bg-transparent text-lg" id="deleteButtonS"> Delete Selected</button>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+    </section>
+
+    
+    <footer class="">
+        <div class="flex gap-1.5 bg-[var(--white)] p-5 rounded-lg text-base">
+            <p class="text-[var(--grey-dark)]">Made by</p>
+            <p class="text-[var(--blue)] font-bold underline"> <a href="https://github.com/RamishMunir" target="_">Ramish Munir</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
