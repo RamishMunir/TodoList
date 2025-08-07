@@ -5,6 +5,7 @@
   },
   "scripts": {
     "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css ",
+    "build:css:local": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch", 
     "build": "npm install && npm run build:css"
   }
 }
